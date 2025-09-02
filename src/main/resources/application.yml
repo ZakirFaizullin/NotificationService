@@ -1,0 +1,12 @@
+application:
+  kafka:
+    topic: "test-topic"
+
+
+spring:
+  kafka:
+    consumer:
+      group-id: "email-group"
+      bootstrap-servers: "localhost:9092"
+      client-id: "test-consumer"
+      auto-offset-reset: earliest
